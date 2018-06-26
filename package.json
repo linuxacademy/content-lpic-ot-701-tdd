@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "mocha tests/**/**.spec.js"
+    "test": "JUNIT_REPORT_PATH=report.xml mocha tests/**/**.spec.js --colors --reporter mocha-jenkins-reporter"
   },
   "dependencies": {
     "body-parser": "~1.18.2",

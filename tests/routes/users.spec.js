@@ -40,8 +40,8 @@ describe('User API Routing', function() {
 	});
 
   //Test cases for adding a user
-  describe('Create user API', function() {
-    it('should create user test with a call to GET /', function(done) {
+  describe('API to get a list of users', function() {
+    it('should return a list of users with a call to GET /', function(done) {
       function check(err, data) {
 
         user_data = data.body;
